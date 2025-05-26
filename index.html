@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wulu | Your Anime Club</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&display=swap" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body { font-family: 'Unbounded', sans-serif; background-color: #fff8f0; }
+  </style>
+</head>
+<body class="text-gray-800">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="/" class="text-2xl font-bold text-pink-600">Wulu</a>
+      <nav class="space-x-6 text-lg">
+        <a href="#about" class="hover:text-pink-500">About</a>
+        <a href="#community" class="hover:text-pink-500">Community</a>
+        <a href="#join" class="hover:text-pink-500">Join</a>
+      </nav>
+    </div>
+  </header>  <!-- Hero Section -->  <section id="hero" class="pt-24 pb-16 bg-[url('https://source.unsplash.com/collection/89765008/1600x900')] bg-cover bg-center text-center">
+    <div class="bg-white bg-opacity-80 p-8 rounded-xl inline-block">
+      <h1 class="text-5xl md:text-6xl font-bold text-pink-600">Welcome to Wulu</h1>
+      <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+        Your cozy anime club with pastel vibes, bold fonts, and endless weeb energy.
+      </p>
+      <a href="#join" class="mt-6 inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full transition-all">
+        Join the Club
+      </a>
+    </div>
+  </section>  <!-- About Section -->  <section id="about" class="py-20 px-4 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-pink-600 mb-4">What is Wulu?</h2>
+      <p class="text-lg text-gray-600">
+        Wulu is an online sanctuary for anime enthusiasts. Whether you love manga, cosplay, or binge-watching the latest series, our community welcomes you. We offer weekly watch parties, fan art showcases, and safe spaces for discussion—all in a playful, pastel-colored environment.
+      </p>
+    </div>
+  </section>  <!-- Community Section -->  <section id="community" class="py-20 px-4 bg-[#fff1f5]">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-pink-600 mb-6">Our Community</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">Watch Parties</h3>
+          <p class="text-gray-700">Stream your favorite series together every weekend.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">Fan Art Contests</h3>
+          <p class="text-gray-700">Unleash your creativity with monthly art challenges.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">Cosplay Meetups</h3>
+          <p class="text-gray-700">Show off your cosplays and make new friends virtually or in-person.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Join Section -->  <section id="join" class="py-20 px-4 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold text-pink-600 mb-4">Ready to Join?</h2>
+      <p class="text-lg text-gray-600 mb-6">
+        Become a member of Wulu for free. Connect with fellow fans, participate in events, and enjoy exclusive perks!
+      </p>
+      <a href="#" class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold py-3 px-8 rounded-full transition-all">
+        Sign Up Now
+      </a>
+    </div>
+  </section>  <!-- Footer -->  <footer class="bg-white border-t mt-12 py-6 text-center text-gray-500">
+    © 2025 Wulu.in · Crafted with passion for anime lovers.
+  </footer>  <!-- Smooth Scroll Script -->  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script></body>
+</html>
