@@ -1,18 +1,18 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        primary: '#FF2D55',
-        secondary: '#00C1D4',
-        tertiary: '#FFD700',
+        cream: '#FFF8E7',
+        pink: '#FFC0CB',
+        paleYellow: '#FFFACD',
       },
       fontFamily: {
-        audiowide: ['var(--font-audiowide)'],
-        michroma: ['var(--font-michroma)'],
-      },
-      animation: {
-        'neon-pulse': 'neonPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        display: ['"Poppins"', 'sans-serif'],
+        body: ['"Inter"', 'sans-serif'],
       },
     },
   },
-};
+  plugins: [],
+}
